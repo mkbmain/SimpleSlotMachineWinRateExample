@@ -9,7 +9,7 @@ Module Program
         Const amountToRun = 50000
         Const totalSpent = amountToRun
         For count As Integer = 1 To 10 Step + 1
-            Dim sw as new StreamWriter($"/home/mkb/Example2{count}.txt")
+            Dim sw As New StreamWriter($"/home/mkb/Example2{count}.txt")
 
             Dim totalPayoutPercent = New List(Of Decimal)()
             For num As Integer = 1 To 500 Step + 1
@@ -56,28 +56,28 @@ Module Program
 
     Function Calc91LittleAndOften(ByVal val) As Decimal
 
-        if val > 400 and val <= 470 Then
+        If val > 400 AndAlso val <= 470 Then
             Return Wins(0)
         End If
-        if val > 500 and val <= 555 Then
+        If val > 500 AndAlso val <= 555 Then
             Return Wins(1)
         End If
-        if val > 900 and val <= 938 Then
+        If val > 900 AndAlso val <= 938 Then
             Return Wins(2)
         End If
-        if val > 950 and val <= 980 Then
+        If val > 950 AndAlso val <= 980 Then
             Return Wins(3)
         End If
-        if val > 985 and val <= 991 Then
+        If val > 985 AndAlso val <= 991 Then
             Return Wins(4)
         End If
-        if val > 991 and val <= 994 Then
+        If val > 991 AndAlso val <= 994 Then
             Return Wins(5)
         End If
-        if val > 994 and val <= 998 Then
+        If val > 994 AndAlso val <= 998 Then
             Return Wins(6)
         End If
-        if val > 998 and val <= 1000 Then
+        If val > 998 AndAlso val <= 1000 Then
             Return Wins(7)
         End If
 
@@ -87,25 +87,25 @@ Module Program
     
     Function Example2(ByVal val) As Decimal
 
-        if val > 400 and val <= 457 Then
+        If val > 400 AndAlso val <= 457 Then
             Return Wins(0)
         End If
-        if val > 500 and val <= 545 Then
+        If val > 500 AndAlso val <= 545 Then
             Return Wins(1)
         End If
-        if val > 600 and val <= 631 Then
+        If val > 600 AndAlso val <= 631 Then
             Return Wins(2)
         End If
-        if val > 700 and val <= 720 Then
+        If val > 700 AndAlso val <= 720 Then
             Return Wins(3)
         End If
-        if val > 800 and val <= 820 Then
+        If val > 800 AndAlso val <= 820 Then
             Return Wins(4)
         End If
-        if val > 950 and val <= 960 Then
+        If val > 950 AndAlso val <= 960 Then
             Return Wins(5)
         End If
-        if val > 997 and val <= 1000 Then
+        If val > 997 AndAlso val <= 1000 Then
             Return Wins(7)
         End If
 
@@ -113,19 +113,19 @@ Module Program
     End Function
 
     Function BiggerButLessFrequent(ByVal val) As Decimal
-        if val > 600 and val <= 629 Then
+        If val > 600 AndAlso val <= 629 Then
             Return Wins(3)
         End If
-        if val > 650 and val <= 660 Then
+        If val > 650 AndAlso val <= 660 Then
             Return Wins(4)
         End If
-        if val > 700 and val <= 709 Then
+        If val > 700 AndAlso val <= 709 Then
             Return Wins(5)
         End If
-        if val > 800 and val <= 807 Then
+        If val > 800 AndAlso val <= 807 Then
             Return Wins(6)
         End If
-        if val > 995 and val <= 1000 Then
+        If val > 995 AndAlso val <= 1000 Then
             Return Wins(7)
         End If
         Return 0
